@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Volodymyr Klymenko. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="sangria" translate="label" sortOrder="100">
+            <label>Sangria</label>
+        </tab>
+        <section id="sangria_backend_voice_settings" translate="label" sortOrder="152" showInDefault="1" showInStore="0" showInWebsite="0">
+            <tab>sangria</tab>
+            <label>Backend Voice</label>
+            <class>separator-top</class>
+            <resource>Sangria_BackendVoice::general</resource>
+            <group id="general" translate="label" showInDefault="1" sortOrder="10">
+                <label>General Settings</label>
+                <field id="google_key" translate="label" type="obscure" sortOrder="60" showInDefault="1" showInWebsite="0">
+                    <label>Google Key</label>
+                    <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

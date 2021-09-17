@@ -1,0 +1,16 @@
+{
+    "voice_dictionary": {
+        "column": {
+            "voice_id": true,
+            "phrase": true,
+            "config": true,
+            "type": true
+        },
+        "index": {
+            "VOICE_DICTIONARY_PHRASE": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
